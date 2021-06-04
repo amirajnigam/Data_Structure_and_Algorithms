@@ -49,8 +49,8 @@ int dequeue(struct queue *q){
 int main(void)
 {
     struct queue q;
-    q.size = 100;
-    q.f = q.r = 0;
+    q.size = 16u;
+    q.f = q.r = -1;
     q.arr = (int *)malloc(q.size * sizeof(int));
 
     enqueue(&q, 10);
